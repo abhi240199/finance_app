@@ -7,6 +7,8 @@ const passport = require("./config/passport-local-strategy");
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const passportGoogle = require("./config/passport-google-strategy-oauth2");
+const passportFacebook = require("./config/passport-facebook-strategy");
+
 app.use(express.urlencoded());
 app.use(cookieParser());
 
