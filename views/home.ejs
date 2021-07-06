@@ -1,4 +1,11 @@
 <h1>Welcome to Finance App</h1>
+<%if(locals.user){%>
+    <h2>
+        <%=locals.user.name%>
+    </h2>
 
-
-<p>We target the right user segments ans run the most relevant campaigns. </p>
+    <h2>
+        <a href="/user/sign-out">Logout</a>
+    </h2>
+    <%}%>
+        <p>We target the right user segments ans run the most relevant campaigns. </p>

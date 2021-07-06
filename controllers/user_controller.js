@@ -29,3 +29,10 @@ module.exports.signUp = function (req, res) {
 module.exports.signIn = function (req, res) {
   return res.render("sign_in");
 };
+module.exports.createSession = function (req, res) {
+  return res.redirect("/");
+};
+module.exports.signOut = function (req, res) {
+  req.logout();
+  return res.render("sign_in");
+};
