@@ -1,11 +1,33 @@
-<h1>Welcome to Finance App</h1>
-<%if(locals.user){%>
-    <h2>
-        <%=locals.user.name%>
-    </h2>
+<link rel="stylesheet" href="/css/header.css">
 
-    <h2>
-        <a href="/user/sign-out">Logout</a>
-    </h2>
-    <%}%>
+<div id='header'>
+    <div>
+        <h1>Finance App</h1>
+    </div>
+
+    <div>
+        <%if(locals.user){%>
+            <div>
+                <a href='/user/profile/<%=locals.user.id%>'>
+                    <%=user.name%>
+                </a>
+            </div>
+            <div><a href='/user/sign-out'>Logout</a></div>
+            <% }else{%>
+                <div><a href='/user/sign-in'>Sign In</a></div>
+                <div><a href='/user/sign-up'>Sign Up</a></div>
+                <%}%>
+
+    </div>
+</div>
+<div>
+
+</div>
+<div>
+    <div>
+        <h1>Welcome to Finance App</h1>
+    </div>
+    <div>
         <p>We target the right user segments ans run the most relevant campaigns. </p>
+    </div>
+</div>

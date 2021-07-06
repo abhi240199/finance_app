@@ -34,5 +34,5 @@ module.exports.createSession = function (req, res) {
 };
 module.exports.signOut = function (req, res) {
   req.logout();
-  return res.render("sign_in");
+  return res.render("home");
 };

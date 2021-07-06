@@ -1,22 +1,38 @@
 <link rel="stylesheet" href="/css/sign.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 
 <br>
 <div id="signUp">
-    <div><b>Signin</b></div>
+    <div>
+        <h1>Signin</h1>
 
-    <form action="/user/create-session" method="POST">
+        <form action="/user/create-session" method="POST">
 
 
-        <input type="text" name="email" placeholder="Email">
-        <br>
-        <input type="text" name="password" placeholder=" Password">
-        <br>
-        <button type="submit" class="Submit_sign_up">Sign In</button>
-    </form>
+            <input type="text" name="email" placeholder="Email" required>
+            <br>
+            <input type="text" name="password" placeholder=" Password" required>
+            <br>
+            <button type="submit" class="Submit_sign_up">Sign In</button>
+        </form>
+    </div>
+
+    <div>
+        <p>Create an account?<a href="/user/sign-up">SignUp</a></p>
+    </div>
+    <div>
+        <p>OR</p>
+    </div>
+    <div id="google-sign">
+        <div>
+            <a href="/user/auth/facebook"><img src="https://img.icons8.com/fluent/48/fa314a/facebook-new.png"
+                    height="30px" width="30px" />
+        </div>
+        <div>
+            <a href="/user/auth/google"><img src="https://img.icons8.com/color/48/000000/google-logo.png" height="30px"
+                    width="30px" /></a>
+        </div>
+    </div>
 </div>
-
-
-<h2 id="google-sign"><a href="/user/auth/google">Google Sign In/Sign Up</a></h2>
-<h2 id="google-sign"><a href="/user/auth/facebook">Facebook Sign In/Sign Up</a></h2>
-<br>
